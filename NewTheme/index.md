@@ -176,8 +176,7 @@ CDK的Edit->Configuration->Preference和Edit->Configuration->Colours and Fonts�
 面向classical风格的界面颜色的配置，还提供了其它各类属性的配置，欢迎开发人员根据自己的使用习惯灵活配置；
 
 如果有其它的问题或者建议，欢迎提交
-[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit?spm=a2cl5.14290816.0.0.59114aa8eqox6t)，
-把问题或建议及时反馈给我们；
+[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit)， 把问题或建议及时反馈给我们；
 
 <br/>
 <br/>

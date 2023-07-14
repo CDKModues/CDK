@@ -39,6 +39,7 @@ Classical默认提供的源代码窗口是亮色系为主，用户可以根据�
     1 Global Settings
     2 Styles
     3 Text Selection
+
 #### Global Settings Tab
 
 ![img_4.png](img_4.png)

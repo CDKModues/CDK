@@ -16,8 +16,7 @@
 
 3 每个.weak的下一行的.global字样直接删掉
 
-![img_1.png](img_1.png)
-
+![img_7.png](img_7.png)
 
 <br/>
 

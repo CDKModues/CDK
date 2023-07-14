@@ -26,6 +26,8 @@
 
 [CDK界面风格自定义教程](NewTheme/index.md)
 
+[CDK中使用玄铁LLVM工具链教程](LLVM/CDK/index.md)
+
 <br/>
 <br/>
 

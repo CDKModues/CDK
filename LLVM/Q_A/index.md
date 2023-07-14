@@ -81,6 +81,8 @@ debug level下拉框中选择gdwarf2即可
 ***
 【问题】编译成功，但是界面显示<font color=red>DWARF error: invalid or unhandled FORM value: 0x25</font>字样
 
+![img_6.png](img_6.png)
+
 【解决方法】
 
 这个问题目前是玄铁LLVM工具链的编译调试信息和玄铁GCC工具链调试信息格式不兼容导致的，不会引起程序错误，

@@ -41,7 +41,7 @@ CDK V2.22.0版本支持了玄铁LLVM工具链，并且支持对玄铁GCC工具�
 
 # 其它问题、意见和建议
 如果您在使用中遇到了其它难以解决的问题或者有更好的改进意见和建议，欢迎提交
-[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit)，把问题或建议及时反馈给我们；
+[OCC工单](https://xuantie.t-head.cn/people/workorder-submit)，把问题或建议及时反馈给我们；
 
 
 <br/>

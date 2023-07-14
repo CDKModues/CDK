@@ -133,7 +133,7 @@
 ## 其它问题
 请参考[玄铁GCC工具链切换玄铁LLVM工具链常见问题汇总](Q_A/index.md) 中的信息;
 
-如果有其它问题，可以提交[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit),会有专业的人员对接问题；
+如果有其它问题，可以提交[OCC工单](https://xuantie.t-head.cn/people/workorder-submit),会有专业的人员对接问题；
 
 
 <br/>

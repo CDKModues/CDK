@@ -100,7 +100,7 @@ debug level下拉框中选择gdwarf2即可
 
 # 其它问题、意见和建议
 如果您在使用中遇到了其它难以解决的问题或者有更好的改进意见和建议，欢迎提交
-[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit)， 把问题或建议及时反馈给我们；
+[OCC工单](https://xuantie.t-head.cn/people/workorder-submit)， 把问题或建议及时反馈给我们；
 
 
 <br/>

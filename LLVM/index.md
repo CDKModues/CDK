@@ -91,11 +91,11 @@
 这里，这里我们同样使用 smartl_e902m-dhrystone、smartl_e907fdp-dhrystone和smartl_e907fdp-whetstone
 作为实验对比，编译参数使用默认的-O2（性能优先）的优化方式，性能运行结果如下：
 
-| 验证工程名                    | 玄铁GCC工具链    | 玄铁LLVM工具链      | 提升百分比 |
-|--------------------------|-------------|----------------|-------|
+| 验证工程名                    | 玄铁GCC工具链       | 玄铁LLVM工具链      | 提升百分比 |
+|--------------------------|----------------|----------------|-------|
 | smartl_e902m-dhrystone   | 1.53 DMIPS/MHz | 1.66 DMIPS/MHz | 8.5%  |
-| smartl_e907fdp-dhrystone | 2.15 DMIPS/MHz |                |       |
-| smartl_e907fdp-whetstone | 167.4 MIPS  |                |       |
+| smartl_e907fdp-dhrystone | 2.15 DMIPS/MHz | 2.34 DMIPS/MHz | 8.8%  |
+| smartl_e907fdp-whetstone | 167.4 MIPS     | 224.5 MIPS     | 34.1% |
 
 可以看到，玄铁LLVM工具链对于处理器性能有显著的提升，
 

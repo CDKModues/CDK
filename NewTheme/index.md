@@ -135,3 +135,52 @@ Global background Colour即可；
 
 ## 代码窗口的其他特性配置
 除了上述的配置界面，CDK还提供了其他额外的特性的配置入口，这里列出一些重要的常用功能的配置；
+
+### 源代码窗口的相关设置
+#### 光标颜色和标所在行
+这些需要多个位置进行设置，首先是光标颜色，点击Edit->Configuration->Colours and Fonts，
+弹出窗口中选择Customize Tab中的Styles子Tab，CDK为每种文本格式都设置了光标的颜色，
+例如C/C++源代码的光标设置在Caret Colour界面中的Foreground Colour中设置；
+
+![img_12.png](img_12.png)
+
+关于光标所在行整行的显示效果，需要点击Edit->Configuration->Preference，
+弹出窗口中选择Editor->Guides界面中的Caret line区域，配置即可；
+
+![img_13.png](img_13.png)
+
+此外，在Preference设置界面中的Editor->Caret & Scrolling界面，还可以配置光标的其它属性，
+例如闪烁的频率、光标宽度等
+
+![img_14.png](img_14.png)
+
+
+#### 空格、Tab字符的显示
+空格、Tab的字符设置，需要点击Edit->Configuration->Preference，弹出的窗口中选择
+Editor->Guides界面中的Whitespaces区域用于配置空白字符的显示方式，
+General区域中的Show indentation guidelines用于配置是否显示Tab字符之间的垂直虚线；
+
+Editor->Indentation中配置Tab键的字符数；
+
+#### 编辑器列最大限定提示
+一些编辑器中可以在代码编辑文本中的右侧显示一条垂直的竖线，用于标记列宽，辅助用户编程中不要超过最大列数，
+CDK也支持这种功能，并且，还可以配置最大列以及颜色、超过列以后的显示方式；
+
+点击Edit->Configuration->Preference，弹出的窗口中选择Editor->Right Margin indicator，
+这里可以配置最大列编辑的限定；
+
+![img_15.png](img_15.png)
+
+# 结语
+CDK的Edit->Configuration->Preference和Edit->Configuration->Colours and Fonts不仅提供了
+面向classical风格的界面颜色的配置，还提供了其它各类属性的配置，欢迎开发人员根据自己的使用习惯灵活配置；
+
+如果有其它的问题或者建议，欢迎提交
+[OCC工单](https://xuantie.t-head.cn\/people/workorder-submit?spm=a2cl5.14290816.0.0.59114aa8eqox6t)，
+把问题或建议及时反馈给我们；
+
+<br/>
+<br/>
+
+***
+<center><font size="2">平头哥半导体有限公司 版权所有</font></center>

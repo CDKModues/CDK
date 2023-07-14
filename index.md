@@ -24,8 +24,7 @@
 
 [玄铁LLVM工具链特性](LLVM/index.md)
 
-[CDK界面风格自定义教程]()
-
+[CDK界面风格自定义教程](NewTheme/index.md)
 
 <br/>
 <br/>

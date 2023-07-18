@@ -4,6 +4,7 @@
 程序性能更好的玄铁LLVM工具链， 这里需要对一些常见的使用问题给出解决方法；
 
 ***
+
 【问题】工程编译汇编文件报错 <font color=red>"xxxxx changed binding to STB_GLOBAL"</font>的错误信息
 
 ![img.png](img.png)
@@ -21,6 +22,7 @@
 <br/>
 
 ***
+
 【问题】使用玄铁LLVM工具链编译的工程的代码size没有明显的降低，甚至还有所增加
 
 【解决方法】
@@ -40,6 +42,7 @@
 <br/>
 
 ***
+
 【问题】编译报错 <font color=red>clang: error: unsupported argument '--gdwarf2' to option '-Wa,'</font>
 
 【解决方法】
@@ -52,6 +55,7 @@ debug level下拉框中选择gdwarf2即可
 <br/>
 
 ***
+
 【问题】工程配置选择玄铁LLVM工具链以后，偶现代码查看、代码自动诊断等功能无法正常使用
 
 【解决方法】
@@ -66,6 +70,7 @@ debug level下拉框中选择gdwarf2即可
 <br/>
 
 ***
+
 【问题】同样的工程，使用玄铁GCC工具链没有警告信息，使用玄铁LLVM工具链，会报很多警告信息出来
 
 【解决方法】
@@ -78,6 +83,7 @@ debug level下拉框中选择gdwarf2即可
 <br/>
 
 ***
+
 【问题】编译成功，但是界面显示<font color=red>DWARF error: invalid or unhandled FORM value: 0x25</font>字样
 
 ![img_6.png](img_6.png)
@@ -90,6 +96,29 @@ debug level下拉框中选择gdwarf2即可
 <br/>
 
 ***
+
+【问题】smartl_e902m-xxxx相关的工程编译通过，运行时异常，无法运行到main函数，直接跑飞；
+
+【解决方法】
+
+可能是所使用的硬件平台没有包含指令cache的硬件模块，需要把工程中的指令cache相关代码注释掉，具体操作：
+
+1 打开工程目录中的文件csi_driver/smartl_rv32/systme.c
+
+![img_8.png](img_8.png)
+
+2 Outline窗口或者代码编辑顶部NavigationBar中快速定位到SystemInit函数
+
+![img_9.png](img_9.png)
+
+3 把函数中csi_icache_enable()注释掉，保存，编译即可；
+
+![img_10.png](img_10.png)
+
+<br/>
+
+***
+
 【问题】
 
 【解决方法】

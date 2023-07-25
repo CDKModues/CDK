@@ -150,9 +150,56 @@ smartl_e902m-xxxx相关的工程编译通过，运行时异常，无法运行到
 这个问题目前是玄铁LLVM工具链的编译调试信息和玄铁GCC工具链调试信息格式不兼容导致的，不会引起程序错误，
 可以暂时忽略该问题，后续版本迭代解决；
 
+<br/>
+
+***
+
+#### 问题9 编译报错<font color=red>xxxx error: unknown directive</font>的错误
+
+![img_12.png](img_12.png)
+
+
+【解决方法】
+
+这种情况一般是汇编语言的某些语法LLVM工具不支持导致的，找到报错位置，直接删除对应的内容即可；
+
+本例中，直接删除对应汇编文件对应的.func关键字即可
+
+![img_13.png](img_13.png)
 
 <br/>
 
+***
+
+#### 问题10 FreeRTOS工程编译成功，运行莫名失败，GCC工具链则可以正常运行
+
+【解决方法】
+
+这种情况可能的是代码中有局部变量绑定某些全局寄存器的语法行为，以FreeRTOS源代码为例，在
+freertosv10.3.1\FreeRTOS\Source\portable\GCC\riscv\port.c文件中的pxPortInitialiseStack函数：
+
+```
+StackType_t *pxPortInitialiseStack( StackType_t * pxTopOfStack, TaskFunction_t pxCode, void *pvParameters )
+{
+    StackType_t *stk  = NULL;
+    register int *gp asm("x3");
+    // other code ...
+```
+
+其中 register int *gp asm("x3") ，将全局寄存器绑定在了局部变量中，
+这在LLVM工具链中是无效操作，会导致程序运行出错
+
+修改方式就是把局部变量变为全局变量即可
+
+```
+register int *gp asm("x3");
+StackType_t *pxPortInitialiseStack( StackType_t * pxTopOfStack, TaskFunction_t pxCode, void *pvParameters )
+{
+    StackType_t *stk  = NULL;
+    // other code ...
+```
+
+<br/>
 
 # 其它问题、意见和建议
 如果您在使用中遇到了其它难以解决的问题或者有更好的改进意见和建议，欢迎提交

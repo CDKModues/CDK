@@ -154,7 +154,9 @@ smartl_e902m-xxxx相关的工程编译通过，运行时异常，无法运行到
 
 ***
 
-#### 问题9 编译报错<font color=red>xxxx error: unknown directive</font>的错误
+#### 问题9
+
+编译报错<font color=red>xxxx error: unknown directive</font>的错误
 
 ![img_12.png](img_12.png)
 
@@ -171,7 +173,9 @@ smartl_e902m-xxxx相关的工程编译通过，运行时异常，无法运行到
 
 ***
 
-#### 问题10 FreeRTOS工程编译成功，运行莫名失败，GCC工具链则可以正常运行
+#### 问题10
+
+FreeRTOS工程编译成功，运行莫名失败，GCC工具链则可以正常运行
 
 【解决方法】
 

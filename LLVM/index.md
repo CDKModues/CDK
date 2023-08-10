@@ -1,6 +1,8 @@
 # 平头哥玄铁LLVM工具链发布
 
-平头哥官方推出了玄铁LLVM工具链，并在CDK V2.22.0版本中做了支持，欢迎大家试用玄铁LLVM工具链~~
+平头哥官方推出了玄铁LLVM工具链，
+并在[CDK V2.22.0](https://xuantie.t-head.cn/community/download?id=4210079943993921536) 
+版本中做了支持，欢迎大家试用玄铁LLVM工具链~~
 
 ## 概要
 玄铁LLVM工具链是基于开源Clang/LLVM工具链开发的平头哥玄铁处理器的闭源工具链。

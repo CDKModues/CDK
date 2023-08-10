@@ -1,5 +1,6 @@
 # CDK中使用玄铁LLVM工具链教程
-CDK V2.22.0版本支持了玄铁LLVM工具链，并且支持对玄铁GCC工具链的替换功能，
+[CDK V2.22.0](https://xuantie.t-head.cn/community/download?id=4210079943993921536) 
+版本支持了玄铁LLVM工具链，并且支持对玄铁GCC工具链的替换功能，
 本文将分享如何使用玄铁LLVM工具链对玄铁CPU进行开发
 
 #### 第一步 确认玄铁LLVM工具链插件是否发布
